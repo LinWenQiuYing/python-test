@@ -389,9 +389,20 @@ print(",\n".join("FishC"))
 # C
 
 print(ord("a"), ord("z"))
-# 97
+# 97 122
 print(ord("A"), ord("Z"))
-# 65
+# 65 90
 
-
-
+print("{}, {}, {}".format("苹果", "香蕉", "梨"))
+# 苹果, 香蕉, 梨
+print("{1}看到{0}就很激动！".format("小甲鱼", "漂亮的小姐姐"))
+# 漂亮的小姐姐看到小甲鱼就很激动
+print("我叫{name}，我爱{obj}。喜爱{obj}的人，运气都不会太差^o^".format(name="小甲鱼", obj="python"))
+# 我叫小甲鱼，我爱python。喜爱python的人，运气都不会太差^o^
+print("{{0}}".format(1))
+# {0}
+print("{{{0}}}".format(1))
+# {1}
+print("{{{{{{0}}}}}}".format(1))
+# {{{0}}}
+# 总结：括号数量为单数，则填充，双数则不变，最终括号数减半
